@@ -1,6 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:tourism_app/data.dart';
 import 'package:transparent_image/transparent_image.dart';
 
@@ -53,11 +52,11 @@ class OnBoardPage extends StatelessWidget {
                 height: size.height * .45,
                 child: CarouselSlider.builder(
                   carouselController: imageCarouselController,
-                  itemCount:incomingEvent.length,
+                  itemCount: incomingEvent.length,
                   options: CarouselOptions(
                     height: size.height * .5,
                     viewportFraction: 0.7,
-                    initialPage:0,
+                    initialPage: 0,
                     enableInfiniteScroll: true,
                     reverse: false,
                     autoPlay: true,
@@ -153,14 +152,11 @@ class OnBoardPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  onPressed: () {
-
-                  },
+                  onPressed: () {},
                   child: Text(
                     'Find Places',
                     style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white),
+                        fontWeight: FontWeight.bold, color: Colors.white),
                   ),
                 ),
               ),
